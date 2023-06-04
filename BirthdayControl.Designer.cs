@@ -30,6 +30,7 @@
         {
             this.nameL = new System.Windows.Forms.Label();
             this.birthdayL = new System.Windows.Forms.Label();
+            this.numberL = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // nameL
@@ -52,14 +53,25 @@
             this.birthdayL.TabIndex = 1;
             this.birthdayL.Text = "birthdayL";
             // 
+            // numberL
+            // 
+            this.numberL.AutoSize = true;
+            this.numberL.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.numberL.Location = new System.Drawing.Point(3, 15);
+            this.numberL.Name = "numberL";
+            this.numberL.Size = new System.Drawing.Size(55, 14);
+            this.numberL.TabIndex = 2;
+            this.numberL.Text = "numberL";
+            // 
             // BirthdayControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.numberL);
             this.Controls.Add(this.birthdayL);
             this.Controls.Add(this.nameL);
             this.Name = "BirthdayControl";
-            this.Size = new System.Drawing.Size(400, 22);            
+            this.Size = new System.Drawing.Size(400, 37);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -69,5 +81,6 @@
 
         private System.Windows.Forms.Label nameL;
         private System.Windows.Forms.Label birthdayL;
+        private System.Windows.Forms.Label numberL;
     }
 }

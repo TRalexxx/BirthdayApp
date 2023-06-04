@@ -38,6 +38,8 @@
             this.addBtn = new System.Windows.Forms.Button();
             this.birthdaysPanel = new System.Windows.Forms.Panel();
             this.birthdayPicker = new System.Windows.Forms.DateTimePicker();
+            this.enterNumberL = new System.Windows.Forms.Label();
+            this.numberTB = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.user_dbDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.birthdaysBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -58,7 +60,7 @@
             // 
             // nameTB
             // 
-            this.nameTB.Location = new System.Drawing.Point(15, 42);
+            this.nameTB.Location = new System.Drawing.Point(15, 35);
             this.nameTB.Name = "nameTB";
             this.nameTB.Size = new System.Drawing.Size(400, 20);
             this.nameTB.TabIndex = 1;
@@ -77,7 +79,7 @@
             // 
             this.chooseBirthDateL.AutoSize = true;
             this.chooseBirthDateL.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.chooseBirthDateL.Location = new System.Drawing.Point(15, 70);
+            this.chooseBirthDateL.Location = new System.Drawing.Point(15, 103);
             this.chooseBirthDateL.Name = "chooseBirthDateL";
             this.chooseBirthDateL.Size = new System.Drawing.Size(133, 19);
             this.chooseBirthDateL.TabIndex = 3;
@@ -85,7 +87,7 @@
             // 
             // addBtn
             // 
-            this.addBtn.Location = new System.Drawing.Point(255, 89);
+            this.addBtn.Location = new System.Drawing.Point(340, 126);
             this.addBtn.Name = "addBtn";
             this.addBtn.Size = new System.Drawing.Size(75, 23);
             this.addBtn.TabIndex = 5;
@@ -96,23 +98,42 @@
             // birthdaysPanel
             // 
             this.birthdaysPanel.AutoScroll = true;
-            this.birthdaysPanel.Location = new System.Drawing.Point(15, 118);
+            this.birthdaysPanel.Location = new System.Drawing.Point(15, 155);
             this.birthdaysPanel.Name = "birthdaysPanel";
-            this.birthdaysPanel.Size = new System.Drawing.Size(400, 184);
+            this.birthdaysPanel.Size = new System.Drawing.Size(400, 197);
             this.birthdaysPanel.TabIndex = 6;
             // 
             // birthdayPicker
             // 
-            this.birthdayPicker.Location = new System.Drawing.Point(15, 92);
+            this.birthdayPicker.Location = new System.Drawing.Point(15, 125);
             this.birthdayPicker.Name = "birthdayPicker";
             this.birthdayPicker.Size = new System.Drawing.Size(200, 20);
             this.birthdayPicker.TabIndex = 7;
+            // 
+            // enterNumberL
+            // 
+            this.enterNumberL.AutoSize = true;
+            this.enterNumberL.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.enterNumberL.Location = new System.Drawing.Point(15, 58);
+            this.enterNumberL.Name = "enterNumberL";
+            this.enterNumberL.Size = new System.Drawing.Size(90, 19);
+            this.enterNumberL.TabIndex = 8;
+            this.enterNumberL.Text = "Enter number";
+            // 
+            // numberTB
+            // 
+            this.numberTB.Location = new System.Drawing.Point(15, 80);
+            this.numberTB.Name = "numberTB";
+            this.numberTB.Size = new System.Drawing.Size(400, 20);
+            this.numberTB.TabIndex = 9;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(431, 314);
+            this.ClientSize = new System.Drawing.Size(431, 364);
+            this.Controls.Add(this.numberTB);
+            this.Controls.Add(this.enterNumberL);
             this.Controls.Add(this.birthdayPicker);
             this.Controls.Add(this.birthdaysPanel);
             this.Controls.Add(this.addBtn);
@@ -139,6 +160,8 @@
         private System.Windows.Forms.Button addBtn;
         private System.Windows.Forms.Panel birthdaysPanel;
         private System.Windows.Forms.DateTimePicker birthdayPicker;
+        private System.Windows.Forms.Label enterNumberL;
+        private System.Windows.Forms.TextBox numberTB;
     }
 }
 
